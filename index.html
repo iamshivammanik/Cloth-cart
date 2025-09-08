@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimpleShop — Pure HTML, CSS & JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">SimpleShop</h1>
+      <button id="openCart" class="btn">
+        🛒 Cart (<span id="cartCount">0</span>)
+      </button>
+    </header>
+
+    <main class="container">
+      <h2>Products</h2>
+      <div id="productGrid" class="grid"></div>
+    </main>
+
+    <!-- Cart panel -->
+    <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="closeCart" class="btn btn-light">✕</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="totals">
+          <span>Total Items: <strong id="totalQty">0</strong></span>
+          <span
+            >Total: <strong>₹<span id="totalPrice">0</span></strong></span
+          >
+        </div>
+        <button id="clearCart" class="btn btn-outline">Clear Cart</button>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
